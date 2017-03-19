@@ -7,14 +7,15 @@ import zadanko.liczenie;
 import org.apache.commons.lang3.StringUtils;
 
 public class kalk {
+	
+	//W klasie tej mamy manu gdzie sa pobierane linijki do obliczenia działan
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner zmienna = new Scanner(System.in);
-		int tmp=1;
+		int a=1;
 		do{
-		tmp=1;
 		System.out.println("Witaj w kalkulatorze");
 		System.out.println("Wpisz 1, aby uruchomic kalkulator 2 aby wykonac działania z pliku 3 aby zakonczyć program");
-		 int a = zmienna.nextInt();
+		  a = zmienna.nextInt();
 		 String pom = null;
 		 zmienna.nextLine();
 		 
@@ -22,7 +23,7 @@ public class kalk {
 			 do{
 			System.out.println("Podaj dzialanie: ");
 			 pom=zmienna.nextLine();
-			 tmp=liczenie.wynik(pom);
+			 liczenie.wynik(pom);
 			 }while(!pom.equals("koniec"));
 			 
 		 }else if(a==2){
@@ -30,14 +31,12 @@ public class kalk {
 			 Scanner odczyt=new Scanner(plik);
 			 while(odczyt.hasNextLine()){
 				 pom=odczyt.nextLine();
-				 tmp=liczenie.wynik(pom);
+				 liczenie.wynik(pom);
 				 
 			 }
-			 
 		 }
-		 if(a==3)
-			 break;
-		}while(tmp==0);
+		
+		}while(a!=3);
 		 
 		
 		
