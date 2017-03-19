@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import zadanko.liczenie;
-import org.apache.commons.lang3.StringUtils;
+
 
 public class kalk {
 	
@@ -32,14 +32,14 @@ public class kalk {
 			 while(odczyt.hasNextLine()){
 				 pom=odczyt.nextLine();
 				 liczenie.wynik(pom);
-				 
 			 }
+			 odczyt.close();
 		 }
 		
 		}while(a!=3);
 		 
 		
-		
+		zmienna.close();
 	}
 
 }
