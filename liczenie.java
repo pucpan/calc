@@ -1,6 +1,5 @@
 package zadanko;
 
-import java.util.Scanner;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -8,7 +7,7 @@ public class liczenie {
 
 public static void wynik(String pom){
 	double wynik=0;
-	Scanner zmienna = new Scanner(System.in);
+	
 	
 
 		 int pom2=0,licznik=0, licznik2=0;
@@ -71,7 +70,6 @@ wynik=liczba[0];
 		 
 		 }	 
 
-	
 }	
 
 }
